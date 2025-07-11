@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta para mi chile morrón</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #f9fafe;
+      background-image: url('hoja-cuaderno.jpg'); /* Reemplaza con tu imagen */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #4a90e2;
+      text-shadow: 1px 1px #fff;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      color: #77aadd;
+      font-size: 2.5em;
+      animation: aparecer 1.5s ease-in-out;
+    }
+
+    .carta {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: flotar 3s ease-in-out infinite alternate;
+      position: relative;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      text-align: justify;
+      color: #6a8fc7;
+      margin-bottom: 40px;
+    }
+
+    .imagenes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .imagenes img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease;
+    }
+
+    .imagenes img:hover {
+      transform: scale(1.08);
+    }
+
+    @keyframes flotar {
+      from { transform: translateY(0); }
+      to { transform: translateY(-8px); }
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Carta para mi chile morrón 🌶💙</h1>
+
+  <div class="carta">
+    <p>
+      Hola mi amor, esta carta está hecha con todo mi corazón.  
+      Eres lo mejor que me ha pasado y quiero recordártelo siempre.  
+      Gracias por existir, por aguantarme, por hacerme sentir amado.  
+      Cada día contigo es un regalo.  
+      Te amo con todo lo que soy.  
+    </p>
+
+    <div class="imagenes">
+      <img src="img1.jpg" alt="Imagen 1">
+      <img src="img2.jpg" alt="Imagen 2">
+      <img src="img3.jpg" alt="Imagen 3">
+      <img src="img4.jpg" alt="Imagen 4">
+      <img src="img5.jpg" alt="Imagen 5">
+      <img src="img6.jpg" alt="Imagen 6">
+      <img src="img7.jpg" alt="Imagen 7">
+      <img src="img8.jpg" alt="Imagen 8">
+    </div>
+  </div>
+
+</body>
+</html>
