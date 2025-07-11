@@ -218,14 +218,16 @@
     }
   </script>
   <script>
-  const fotos = ["uno.jpg", "dos.jpg", "tres.jpg", "cuatro.jpg","cinco.jpg","seis.jpg","siete.jpg","ocho.jpg"]; 
-  let index = 0;
-  const imgElement = document.getElementById("foto-carrusel");
+   window.onload = () => {
+    const fotos = ["uno.jpg", "dos.jpg", "tres.jpg", "cuatro.jpg", "cinco.jpg", "seis.jpg", "siete.jpg", "ocho.jpg"];
+    let index = 0;
+    const imgElement = document.getElementById("foto-carrusel");
 
-  setInterval(() => {
-    index = (index + 1) % fotos.length;
-    imgElement.src = fotos[index];
-  }, 10000); 
+    setInterval(() => {
+      index = (index + 1) % fotos.length;
+      imgElement.src = fotos[index];
+    }, 10000);
+  };
 
   function reaccionAmor(e) {
     const carrusel = document.querySelector(".carrusel");
